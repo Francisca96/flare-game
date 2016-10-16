@@ -1,130 +1,39 @@
-# Flare
+# First Report - ESOF FEUP
+
+## Index
+1. Flare Game
+2. Development Process
+  1. Test After Development
+  2. Release often, release early & Incremental Development and Delivery
+  3. Reuse-oriented software engineering
+3. Opinions, Critics and Alternatives
+
+## Flare Game
 
 Flare is a a single-player 2D action RPG with fast-paced action and a dark fantasy style.
 
-It is built on the FLARE engine (Free/Libre Action Roleplaying Engine). Its repo is at https://github.com/clintbellanger/flare-engine
+It is built on the [FLARE engine](https://github.com/clintbellanger/flare-engine) (Free/Libre Action Roleplaying Engine).
 
-Flare uses simple file formats (INI style config files) for most of the game data, allowing anyone to easily modify game contents. Open formats are preferred (png, ogg). Maps are edited using Tiled.
+Flare uses simple file formats (INI style config files) for most of the game data, allowing anyone to easily modify game contents. Open formats are preferred (png, ogg). Maps are edited using [Tiled](http://www.mapeditor.org).
 
-![Flare screenshot](distribution/screenshot1.jpg)
+## Development-Process
+### Test After Development
 
-## Copyright and License
+As Flare was, for the first versions, a project with a single developer and that developer didn't really believe in testing its own code, there isn't a lot of automated testing on Flare Game. Only when the project started growing and having more contributers the main developer regretted his decision and started implementing some tests. However, these tests were to confirm if a feature was correctly implemented, that's why this is Test After Development instead of Test Driven Development.  
+Good Unit Testing isn't very easy to implement in games, it is easy when you have an isolated functionality and you can easily nail down the correct inputs and outputs. But games have a lot of parts moving in sync, and the real bugs are often ones that are hard to test for or even predict.  
 
-Flare (the game) is Copyright ©2010-2013 Clint Bellanger. Contributors retain copyrights to their original contributions.
+### Release often, release early & Incremental Development and Delivery
 
-The Flare Engine is released under GPL version 3 or later.
+Flare was designed with the intention of fulfilling a [TO-DO](http://flarerpg.org/todo) list. As some items were cut off the TO-DO list, release versions were launched, this was easy because the list was ordered bottom-up and focused first on the core gameplay and then on improving the gameplay and adding features. For every release, all known bugs would be fixed.
+As more and more programmers started working on this project, they started cross-testing features on Pull-Requests and using tools like valgrind and automatic build checkers to secure consistency on releases. Thats how it fits the Release often, release early development process and at the same time the Incremental Development Delivery.
 
-All of Flare's art and data files are released under CC-BY-SA 3.0. Later versions are permitted.
+### Reuse-oriented software engineering
 
-The Liberation Sans fonts version 2 are released under the SIL Open Font License, Version 1.1.
+Flare was a game to create the Flare Engine. It started with a game and eventually the code was cleaned up and step by step all the hardcoded parts of the game were abstracted and Flare-Engine was born. With the increasing number of contributers and new games tested on Flare-Engine it became bigger and bigger and more polished.
+The Flare-Engine is a clear example of Reuse-oriented software engineering.
 
-The GNU Unifont font is released under GPL v2, with the exception that embedding the font in a document does not in itself bind that document to the terms of the GPL.
+## Opinions, Critics and Alternatives
 
-
-## Links
-
-* Homepage  http://flarerpg.org
-* Repo      https://github.com/clintbellanger/flare-game
-* Binaries  https://sourceforge.net/projects/flare-game/
-* Forums    http://opengameart.org/forums/flare
-* Email     clintbellanger@gmail.com
-
-## The Simplest Setup
-
-If you are building and running Flare Game from source, this is the simplest way to get started on all operating systems. Here you build and play Flare in a local folder instead of installing it to a standard OS folder (e.g. /usr/local or Program Files).
-
-* Clone the flare-engine repo and build the executable.
-* Clone the flare-game repo into your user directory.
-* Copy the flare-engine "default" mod into the flare-game mods folder.
-* Put the flare executable inside the flare-game folder
-* The executable and the "mods" folder should be in the same directory
-* Run Flare
-
-## Building and Running (non-Linux)
-
-See the Flare-Engine repo for instructions on how to build/install Flare:
-
-https://github.com/clintbellanger/flare-engine
-
-Flare Game is installed as a set of mods for Flare Engine. Place the contents of the "mods" folder inside Flare Engine's mods folder.
-
-* On Windows, the mods folder will be in the same directory as the flare executable.
-* On OSX, this will be inside the Flare.app folder, in Resources/mods
-
-Then enable these mods in Flare's Configuration screen.
-
-    fantasycore
-    alpha_demo
-
-
-### Building and Running on Linux
-
-Clone the repos:
-
-	git clone https://github.com/clintbellanger/flare-engine
-	git clone https://github.com/clintbellanger/flare-game
-
-
-Move to the flare-engine repo and build:
-For instructions more in detail see the INSTALL file in the
-flare-engine repo.
-
-	cd flare-engine
-	cmake . && make
-
-
-From this point we have two options:
-
-Option 1
-Install the game system-wide (requires root access):
-
-	sudo make install
-	cd ../flare-game
-	cmake . && sudo make install
-	cd ~ #this step is important because we don't want to load mods from the repo folders
-	flare --game=flare-game #alternatively, launch Flare from the desktop application menu
-
-
-Option 2
-Run the game without installing:
-
-	cd ../flare-game
-	ln -s ../flare-engine/flare flare
-	cd mods
-	ln -s ../../flare-engine/mods/default default
-	cd ..
-	./flare --game=flare-game
-
-
-
-## Settings
-
-Settings are stored in one of these places:
-
-    $XDG_CONFIG_HOME/flare
-    $HOME/.config/flare
-    ./config
-
-Here you can enable fullscreen, change the game resolution, enable mouse-move, and change keybindings. The settings files are created the first time you run Flare.
-
-## Save Files
-
-Save files are stored in one of these places:
-
-    $XDG_DATA_HOME/flare
-    $HOME/.local/share/flare
-    ./saves
-
-If permissions are correct, the game is automatically saved when you exit.
-
-## Packaging and Distributing
-
-If you are packaging Flare Game for release (e.g. on an operating system's software repo), we suggest creating two packages.
-
-* flare-engine the package that contains the single engine reused by several games
-* flare-game, a package that requires flare-engine that only contains this game data
-
-When distributing flare-game you may elect to omit these folders which are not used at runtime.
-
-* art_src contains the raw files (e.g. Blender files) used to generate Flare's art.
-* tiled contains the Tiled-native map files used to export Flare's maps
+Our main critic is that this project was developed as a single-developer project and it lacks planning as well as tools to prevent breaking the code from one release to another one (an automatic test suite). Also, this created a need to refactor code over and over again, because most of initial implementations were crude and "dirty".  
+We were also told that the main kind of "bug" found on Flare were unhandled exceptions (i.e: what to do when a config file is missing). An easy fix for this would be Test Driven Development, as it thrives on catching this kind of "bugs".
+In general, we think the project is actually well structured, except for the beginning when it wasn't ready for external contributers. It lacks some more tests to assure consistency.
