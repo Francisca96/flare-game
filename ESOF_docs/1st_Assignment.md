@@ -1,0 +1,39 @@
+# First Report - ESOF FEUP
+
+## Index
+1. [Flare Game](#intro)
+2. [Development Process](#dev)
+  1. [Test After Development](#tad)
+  2. [Release often, release early & Incremental Development and Delivery](#incremental)
+  3. [Reuse-oriented software engineering](#rose)
+3. [Opinions, Critics and Alternatives](#critic)
+
+##**Flare Game** <a name ="intro"></a>
+
+Flare is a a single-player 2D action RPG with fast-paced action and a dark fantasy style.
+
+It is built on the [FLARE engine](https://github.com/clintbellanger/flare-engine) (Free/Libre Action Roleplaying Engine).
+
+Flare uses simple file formats (INI style config files) for most of the game data, allowing anyone to easily modify game contents. Open formats are preferred (png, ogg). Maps are edited using [Tiled](http://www.mapeditor.org).
+
+##**Development-Process** <a name="dev"></a>
+###**Test After Development** <a name="tad"></a>
+
+As Flare was, for the first versions, a project with a single developer and that developer didn't really believe in testing its own code, there isn't a lot of automated testing on Flare Game. Only when the project started growing and having more contributers the main developer regretted his decision and started implementing some tests. However, these tests were to confirm if a feature was correctly implemented, that's why this is Test After Development instead of Test Driven Development.  
+Good Unit Testing isn't very easy to implement in games, it is easy when you have an isolated functionality and you can easily nail down the correct inputs and outputs. But games have a lot of parts moving in sync, and the real bugs are often ones that are hard to test for or even predict.  
+
+###**Release often, release early & Incremental Development and Delivery** <a name="incremental"></a>
+
+Flare was designed with the intention of fulfilling a [TO-DO](http://flarerpg.org/todo) list. As some items were cut off the TO-DO list, release versions were launched, this was easy because the list was ordered bottom-up and focused first on the core gameplay and then on improving the gameplay and adding features. For every release, all known bugs would be fixed.
+As more and more programmers started working on this project, they started cross-testing features on Pull-Requests and using tools like valgrind and automatic build checkers to secure consistency on releases. Thats how it fits the Release often, release early development process and at the same time the Incremental Development Delivery.
+
+###**Reuse-oriented software engineering** <a name="rose"></a>
+
+Flare was a game to create the Flare Engine. It started with a game and eventually the code was cleaned up and step by step all the hardcoded parts of the game were abstracted and Flare-Engine was born. With the increasing number of contributers and new games tested on Flare-Engine it became bigger and bigger and more polished.
+The Flare-Engine is a clear example of Reuse-oriented software engineering.
+
+##**Opinions, Critics and Alternatives** <a name="critic"></a>
+
+Our main critic is that this project was developed as a single-developer project and it lacks planning as well as tools to prevent breaking the code from one release to another one (an automatic test suite). Also, this created a need to refactor code over and over again, because most of initial implementations were crude and "dirty".  
+We were also told that the main kind of "bug" found on Flare were unhandled exceptions (i.e: what to do when a config file is missing). An easy fix for this would be Test Driven Development, as it thrives on catching this kind of "bugs".
+In general, we think the project is actually well structured, except for the beginning when it wasn't ready for external contributers. It lacks some more tests to assure consistency.
