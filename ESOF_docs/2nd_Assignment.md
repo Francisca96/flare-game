@@ -4,8 +4,8 @@
 
 1. [Requirements: Introduction, Purpose/Scope, and Description](#intro)
 2. [Specific Requirements and Features](#req)  
-  1.[Functional requirements](#func)  
-  2.[Non-functional requirements](#non)
+  1. [Functional requirements](#func)  
+  2. [Non-functional requirements](#non)
 3. [Use Cases](#use)
 4. [Domain Model](#dom)
 
