@@ -34,4 +34,4 @@ Flare Engine shall be an Open Source project, as well as all public games create
 
 ##**Domain Model** <a name ="dom"></a>
 
-![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/domain_model.PNG)
+![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/domain_model.png)
