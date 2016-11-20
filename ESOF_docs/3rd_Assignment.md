@@ -18,6 +18,8 @@ According to this view model, the views are used to describe the system from the
 
 In this report, we will be presenting the 4 views regarding this view model.
 
+
+
 ##**Logical View** <a name ="log"></a>
 
 This kind of view concerns the functionality that the language provides to the end-user. The UML diagrams that can be used to represent the logical view are: Sequence Diagram, Communication Diagram and Class Diagram.
@@ -26,13 +28,19 @@ It is important to notice that, in this view, we will focus mostly on the engine
 
 ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/logical_view.png)
 
+
+
 ##**Implementation View** <a name ="imp"></a>
 
 ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/implementation_view.png)
 
+
+
 ##**Process View** <a name ="pro"></a>
 
 ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/process_view.png)
+
+
 
 ##**Deployment View** <a name ="dep"></a>
 
