@@ -24,8 +24,16 @@ This kind of view concerns the functionality that the language provides to the e
 
 It is important to notice that, in this view, we will focus mostly on the engine of the game, since the quantity and diversity of the modules that exist on the game reduce the importance of their architecture, because the modules just have to be done in a way that makes them able to be integrated on the engine.
 
+![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/logical_view.png)
+
 ##**Implementation View** <a name ="imp"></a>
+
+![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/implementation_view.png)
 
 ##**Process View** <a name ="pro"></a>
 
 ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/process_view.png)
+
+##**Deployment View** <a name ="dep"></a>
+
+![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/deployment_view.png)
