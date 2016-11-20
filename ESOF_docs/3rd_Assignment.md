@@ -1,14 +1,14 @@
 # Third Report - ESOF FEUP
 
 ## Index
-1. [Introduction](#intro)
+1. [Software Architecture - Introduction](#intro)
 2. [Logical View](#log)
 3. [Implementation View](#imp)
 4. [Process View](#pro)
 5. [Deployment View](#dep)
 6. [Critics and Analysis](#crit)
 
-##**Introduction** <a name ="intro"></a>
+##**Software Architecture - Introduction** <a name ="intro"></a>
 
 This report aims to explain some aspects relating the software architecture of the Flare Game/Flare Engine projects. This software architecture is based on the [4+1 Mode of Software Architecture](http://cic.puj.edu.co/wiki/lib/exe/fetch.php?media=materias:mazeiar-kruchten-4_1.pdf).
 According to this view model, the views are used to describe the system from the viewpoint of different stakeholders, such as end-users, developers and project managers. The four views of the model are logical, implementation, process and deployment view. The aditional view (+1) is related with the [use-cases](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/use_case.PNG), which diagram was already presented on the [last report](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/2nd_Assignment.md).
