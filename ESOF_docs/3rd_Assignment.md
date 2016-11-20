@@ -56,4 +56,6 @@ The deployment view UML models the physic distribution of artifacts in nodes.
 
 ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/deployment_view.jpg)
 
+As we can see, the diagram is simple because this is an offline game. Therefore we don't need more than one device to run it. Through the diagram it is possible to understand that flare-game can be played in several devices and operating systems. Originally, the game was only available to the PC (Windows and Linux) but, recently, the contributors started to develop an android and iOS version of the game. The app can be executing by running the correspondent scripts of each platform.
+
 
