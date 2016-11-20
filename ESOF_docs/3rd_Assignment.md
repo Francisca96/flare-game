@@ -36,4 +36,4 @@ It is important to notice that, in this view, we will focus mostly on the engine
 
 ##**Deployment View** <a name ="dep"></a>
 
-![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/deployment_view.png)
+![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/deployment_view.jpg)
