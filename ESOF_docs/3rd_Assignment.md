@@ -15,13 +15,19 @@ According to this view model, the views are used to describe the system from the
 
 ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/4%2B1model.png)
 
-In this report, we will be presenting the 4 views regarding this view model.
+In this report, we will be presenting the 4 views regarding this view model:
+
+* Logical View: is concerned with the functionality that the system provides to end-users. UML diagrams used to represent the logical view include activity diagrams, class diagrams, and state diagrams.
+
+* Implementation View: illustrates a system from a programmer's perspective and is concerned with software management. This view is also known as the implementation view. It uses the UML Component diagram to describe system components. UML Diagrams used to represent the development view include the Package diagram.
+
+* Process View: deals with the dynamic aspects of the system, explains the system processes and how they communicate, and focuses on the runtime behavior of the system. The process view addresses concurrency, distribution, integrators, performance, and scalability, etc. UML diagrams to represent process view include the activity diagram.
+
+* Deployment View: depicts the system from a system engineer's point of view. It is concerned with the topology of software components on the physical layer as well as the physical connections between these components. This view is also known as the deployment view. UML diagrams used to represent the physical view include the deployment diagram.
 
 
 
 ##**Logical View** <a name ="log"></a>
-
-This kind of view concerns the functionality that the language provides to the end-user. The UML diagrams that can be used to represent the logical view are: Sequence Diagram, Communication Diagram and Class Diagram.
 
 It is important to notice that, in this view, we focused mostly on the game, since the quantity and diversity of the modules that exist on the engine reduce the importance of their architecture.
 
