@@ -62,7 +62,7 @@ Flare is a project with some heterogeneity, in a way it uses some external techn
 
 ##**Test Statistics and analytics** <a name ="test"></a>
 
-In this topic, we will analyze all the statistics collected either in the game or in the engine.
+In this topic, we will analyze all the statistics collected both in the game and in the engine.
 
 As we said before, none of the game components have tests (neither the game or the engine), so the coverage of the tests is null. So we based our analitics in Codacy results, that is a code reviewer.
 
@@ -85,6 +85,6 @@ Unfortunately, even though all the testing we did (trying to crash the game in a
 
 ##**Contribution**
 
-Andre Reis -- 33%
-Francisca Pauperio -- 33%
-Joao Chaves -- 33%
+[Andre Reis](https://github.com/andrebreis) -- 33%  
+[Francisca Pauperio](https://github.com/Francisca96) -- 33%  
+[Joao Chaves](https://github.com/JoaoChaves96) -- 33%  
