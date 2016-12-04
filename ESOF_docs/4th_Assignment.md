@@ -62,4 +62,18 @@ Flare is a project with some heterogeneity, in a way it uses some external techn
 
 ##**Test Statistics and analytics** <a name ="test"></a>
 
+In this topic, we will analyse all the statistics collected either in the game or in the engine.
+
+As we said before, none of the game components have tests (neither the game or the engine), so the coverage of the tests is null. So we based our analitics in Codacy results, that is a code reviewer.
+
+![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/percentages_engine.png)
+![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/percentages_game.png)
+
+The first image, the one with an A on the top, is about engine and the other with a B has the percentages about flare game. Basing ourselves in this percentages, we can prove stuff witch we have previously stated. 
+The main developer told us, in the first e-mail, that he doesn't need tests while he was coding alone. As we can see, both components have excellent quality pointers, even without develop any tests. So he was not very wrong.
+
+Despite the documentation field is empty ("no patterns") the code is documented in javadoc. The code reviewer that we used also couldn't analyse the code complexity. In the unused code field we can note an high difference between both components (engine - 99%/ game - 0%), this is only for one reason, like we have said in other assignments, the flare-game does not have code.
+
+
+
 ##**Bug** <a name ="bug"></a>
