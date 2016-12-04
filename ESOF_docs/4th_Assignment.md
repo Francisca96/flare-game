@@ -21,20 +21,20 @@ In the first part, we will talk about the testability of the game, i.e., how eas
 ##**Software Testability and reviews** <a name ="test_rev"></a>
 
 If we analyze the game and the engine, we can conclude that in this project there isn’t any unit test.
-So, we asked the main contributor of the project if they had any tests at all. His answer was that, in the beginning, he was developing solo and almost never broke the build. He tested along the way and fixed any known bugs before moving on. That happened because he knew the entire codebase. Although there were no tests, he said that, when the project started to have more contributors, they did some informal kinds of testing. When they were working on core features, they did a lot of cross-testing to each other’s features before checking into the main code base. Of course, GitHub and Pull Requests made that easy. Also, they set up an automatic build checker that would report any warnings and errors anytime new code was added. They used tools as [Valgrind](http://valgrind.org/) to check the general health of the code for things like memory leaks and buffer overruns.
+So, we asked the main contributor of the project if they had any tests at all. His answer was that, in the beginning, he was developing solo and almost never broke the build. He tested along the way and fixed any known bugs before moving on. That happened because he knew the entire codebase. Although there were no tests, he said that, when the project started to have more contributors, they did some informal kinds of testing. When they were working on core features, they did a lot of cross-testing to each other’s features before checking into the main code base. Of course, GitHub and Pull Requests made that easy. Also, they set up an automatic build checker that would report any warnings and errors anytime new code was added. They used tools like [Valgrind](http://valgrind.org/) to check the general health of the code for things like memory leaks and buffer overruns.
 In the end, he admitted that when the project started to grow, new programmers didn’t automatically know how all parts worked together, so a test suite would be great for catching mistakes. 
 
 ####**Controllability** <a name ="cont"></a>
 
 In terms of the controllability of the components that are under test, it depends on each component. We can have two approaches, one if the component is an engine component, and other, if the component is a game component.
-If it is about an engine component, it is most likely to have a reduced controllability, because the engine can interact with a variety of games. Therefore, it is harder to predict all the possible outcomes.
-If the component under test is a game component, it should present a higher controllability, because its interaction is limited to the other components of the same game and to the engine. 
-Besides that, in this project there is no way of test the components of the game and the engine separately, because one can’t run without the other. This is bad, because it makes testing a lot harder. A solution to this problem would be making the game and the engine abstract. If this happened, we would be able to test the engine and the game individually.
+If it is about an engine component, it is most likely to have reduced controllability, because the engine can interact with a variety of games. Therefore, it is harder to predict all the possible outcomes.
+If the component under test is a game component, it should present higher controllability, because its interaction is limited to the other components of the same game and to the engine. 
+Besides that, in this project there is no way of testing the components of the game and the engine separately, because one can’t run without the other. This is bad, because it makes testing a lot harder. A solution to this problem would be making the game and the engine abstract. If this happened, we would be able to test the engine individually.
 
 ####**Observability** <a name ="obs"></a>
 
-As said before, Flare only uses one tool for testing named Valgrind. Valgrind is an instrumentation framework for building dynamic analysis tools. The problem with this tool is that it doesn´t do the same as unit testing. Unit testing can test all components individually. Valgrind doesn´t. It can only test components as you play the game. For example, if the Play Button didn’t work, Unit Testing would return an error in this component but would still run and test all other components. On the other hand, Valgrind would return the error on the Play Button, but wouldn´t test all other components, because we couldn’t run the game.
-So, we can conclude that the observability of the results is very bad, because the tool used doesn´t allow to test every component at once. He would need to run the game long enough to test all its components.
+As said before, Flare only uses one tool for testing named Valgrind. Valgrind is an instrumentation framework for building dynamic analysis tools. The problem with this tool is that it isn't unit testing. Unit tests are atomic tests, that test each functionality by itself, theorically independently from any other functionality. With Valgrind this doesn´t work. It can only test components as you play the game. For example, if the Play Button didn’t work, Unit Testing would return an error in this component but would still run and test all other components. On the other hand, Valgrind would return the error on the Play Button, but wouldn´t test all other components, because we couldn’t run the game.
+So, we can conclude that the observability of the results is very bad, because the used tool doesn´t allow to test every component independently of any other components. We would need to run the game long enough to test all its components and if any component fails, all the components dependent of that one can't be tested.
 
 
 ####**Isolateability** <a name ="iso"></a>
@@ -48,7 +48,7 @@ In terms of testing, once again, it is not well defined, because we need to mix 
 
 ####**Understandabilty** <a name ="und"></a>
 
-All modules on Flare are well document. Moreover, this is a pre-requisite specified on a [Codingstyle.txt](https://github.com/clintbellanger/flare-engine/blob/master/Codingstyle.txt) file on the engine. The code is documented using Javadoc style comments on the functions, especially if they are non-obvious. Every submission that doesn’t respect the requisites on this file is at risk of being rejected.
+All modules on Flare are well documented. Moreover, this is a pre-requisite specified on a [Codingstyle.txt](https://github.com/clintbellanger/flare-engine/blob/master/Codingstyle.txt) file on the engine. The code is documented using Javadoc style comments on the functions, especially if they are non-obvious. Every submission that doesn’t respect the requisites on this file is at risk of being rejected.
 
 ####**Heterogeneity** <a name ="het"></a>
 
