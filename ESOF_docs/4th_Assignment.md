@@ -11,6 +11,7 @@
   vi. [Heterogeneity](#het)  
 3. [Test Statistics and analytics](#test)
 4. [Bug Identification](#bug)
+5. [Contribution](#contrib)
 
 ##**Verification and Validation - Introduction** <a name ="intro"></a>
 
@@ -72,7 +73,7 @@ As we said before, none of the game components have tests (neither the game or t
 The first image, the one with an A on the top, is about engine and the other with a B has the percentages about flare game. Basing ourselves in this percentages, we can prove what we have previously stated. 
 The main developer told us, in the first e-mail, that he didn't need tests because he was coding alone, and he usually didn't break the codebase. As we can see, both components have excellent quality pointers, even without any tests. This means his principle was not bad at all, but as the number of contributors and the size of the project rose unexpectedly, unit tests would be a really big improvement to the quality of the development.
 
-Despite the documentation field being empty ("no patterns") the code is documented with javadoc-like syntax. The code reviewer that we used also couldn't analyze the code complexity. In the unused code field we can note an high difference between both components (engine - 99%/ game - 0%), this is only for one reason, like we have said in other assignments, the flare-game does not have code.
+Despite the documentation field being empty ("no patterns") the code is documented with javadoc-like syntax. The code reviewer that we used also couldn't analyze the code complexity. In the unused code field we can note an high difference between both components (engine - 99%/ game - 0%). This is only for one reason, like we have said in other assignments, flare-game does not have code.
 
 
 ##**Bug Identification** <a name ="bug"></a>
@@ -83,7 +84,7 @@ Unfortunately enough, this bug was corrected while we were studying the codebase
 Unfortunately, even though all the testing we did (trying to crash the game in all ways possible), we couldn't find another bug. While there are some issues with the bug label open on the Flare-Engine repository, we found out that they are open but the bugs are fixed, there just wasn't the effort to close the issues.
 
 
-##**Contribution**
+##**Contribution** <a name ="contrib"></a>
 
 [Andre Reis](https://github.com/andrebreis) -- 33%  
 [Francisca Pauperio](https://github.com/Francisca96) -- 33%  
