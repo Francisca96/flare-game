@@ -10,7 +10,7 @@
   v. [Understandability](#und)  
   vi. [Heterogeneity](#het)  
 3. [Test Statistics and analytics](#test)
-4. [Bug](#bug)
+4. [Bug Identification](#bug)
 
 ##**Verification and Validation - Introduction** <a name ="intro"></a>
 
@@ -75,5 +75,9 @@ The main developer told us, in the first e-mail, that he doesn't need tests whil
 Despite the documentation field is empty ("no patterns") the code is documented in javadoc. The code reviewer that we used also couldn't analyse the code complexity. In the unused code field we can note an high difference between both components (engine - 99%/ game - 0%), this is only for one reason, like we have said in other assignments, the flare-game does not have code.
 
 
+##**Bug Identification** <a name ="bug"></a>
 
-##**Bug** <a name ="bug"></a>
+For this assignment, we were supposed to discover and correct a bug (an error, something that is unexpected behaviour) on the Flare-Game + Flare-Engine application.  
+When you have a big and correctly working project like Flare, finding a bug shouldn't be an easy task. Despite that, after some manual testing (in another words, playing the game), we found out that for most environments, in the character menu, the characteristic (Mental, Physical, Defense,..) labels and buttons weren't being placed correctly - they were overlapping each other in the top left corner of the menu.  
+Unfortunately enough, this bug was corrected while we were studying the codebase to find out how to correct it - on this [commit](https://github.com/clintbellanger/flare-engine/commit/2b7f9fbaab4ba67c6b7bc7ec7d2be7bbd2a048f8).  
+Unfortunately, even though all the testing we did (trying to crash the game in all ways possible), we couldn't find another bug. While there are some issues with the bug label open on the Flare-Engine repository, we found out that they are open but the bugs are fixed, there just wasn't the effort to close the issues.
