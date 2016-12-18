@@ -41,14 +41,14 @@
   
 
  ##**Evolution Proccess** <a name= "evo"></a>
- ####**Identifying a possible feature** <a name= "ident"></a>
+ ###**Identifying a possible feature** <a name= "ident"></a>
 
   During our testing of the Flare Game, we found out that to users with lower mouse sensivity it was boring to turn off the sound, since it needed to set both sliders all the way to the left.
 
   We thought that, like many other applications, there could be a button that would toggle the sound - we did this with a checkbox.
 
 
- ####**Implementation of the feature** <a name= "imp"></a>
+ ###**Implementation of the feature** <a name= "imp"></a>
  
  To locate the parts in the source code that needed to be modified, we searched within the source code files for menus for the "Audio" word, since what we wanted to add was in the Audio tab of the configurations menu.  
  Then we found the __GameStateConfigBase__ header and source files, that contained most of the code envolving the configurations menu. As these files' code is very straightforward and easy to read, it was just a step until the configurations menu had the operating checkboxes.  
@@ -60,6 +60,12 @@
  
  We leave a note that the similarity between these two files should cause a refactor so that the code can be shared between these files. However, we did not want to do this because it would make our pull request bigger and it would stop being focused on implementing one feature - it would implement a feature and refactor code - and this goes against the repository contribution convention (It's better to make many small pull requests than a big pull request).
 
-  ####**Submission of the feature** <a name= "sub"></a>
+  ###**Submission of the feature** <a name= "sub"></a>
 
   Our pull request can be found [here](https://github.com/clintbellanger/flare-engine/pull/1479).
+  
+##**Contribution** <a name ="contrib"></a>
+
+[Andre Reis](https://github.com/andrebreis) -- 33%  
+[Francisca Pauperio](https://github.com/Francisca96) -- 33%  
+[Joao Chaves](https://github.com/JoaoChaves96) -- 33%  
