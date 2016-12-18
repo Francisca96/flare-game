@@ -1,5 +1,7 @@
 # Fifth Report - ESOF FEUP
 
+[![BCH compliance](https://bettercodehub.com/edge/badge/andrebreis/flare-engine)](https://bettercodehub.com)
+
 ## Index
 1. [Software Maintenance/Evolution - Introduction](#intro)
 2. [Software Maintainability - SIG metrics](#sig)
@@ -36,5 +38,24 @@
   ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/10.png)
   ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/11.png)
   ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/12.png)
+  
 
+ ##**Evolution Proccess** <a name= "evo"></a>
+ ###**Identifying a possible feature** <a name= "ident"></a>
+
+During our testing of the Flare Game, we found out that to users with lower mouse sensivity it was boring to turn off the sound, since it needed to set both sliders all the way to the left.
+
+We thought that, like many other applications, there could be a button that would toggle the sound - we did this with a checkbox.
+
+
+ ###**Implementation of the feature** <a name= "imp"></a>
  
+ To locate the parts in the source code that needed to be modified, we searched within the source code files for menus for the "Audio" word, since what we wanted to add was in the Audio tab of the configurations menu.  
+ Then we found the __GameStateConfigBase__ header and source files, that contained most of the code envolving the configurations menu. As these files' code is very straightforward and easy to read, it was just a step until the configurations menu had the operating checkboxes.  
+ After that, we needed to keep the checkboxes checked after closing the menu, that is, saving the checkboxes state, and while searching for that we found the _saveSettings_ function, which sent us to the __Settings__ header and source files, where we refactored our code a bit so it would save the checkboxes state and accept a default value coming from configuration files.
+ The last step was adding the checkboxes to the game pause menu, that we found on the __MenuExit__ header and source files. As the code in these files was pretty similar to the __GameStateConfigBase__ files, it was easy to implement the checkboxes here too.  
+ We leave a note that the similarity between these two files should cause a refactor so that the code can be shared between these files. However, we did not want to do this because it would make our pull request bigger and it would stop being focused on implementing one feature - it would implement a feature and refactor code - and this goes against the repository contribution convention (It's better to make many small pull requests than a big pull request).
+
+###**Submission of the feature** <a name= "sub"></a>
+
+Our pull request can be found [here](https://github.com/clintbellanger/flare-engine/pull/1479).
