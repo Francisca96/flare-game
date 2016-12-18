@@ -18,20 +18,19 @@
  ##**Software Maintainability - SIG metrics** <a name= "sig"></a>
  
  [Software maintainability](http://www.castsoftware.com/glossary/software-maintainability) is defined as the degree to which an application is understood, repaired, or enhanced. Software maintainability is important because it consumes range between 40% to 80% of software costs in a project. Bellow we will present some curious metrics from the Software Improvement Group (SIG) of [Better Code Hub](https://bettercodehub.com). Better Code Hub is a web-based source code analysis service that checks the database for compliance with the ten guidelines presented in _Building Maintainable Software: Ten Guidelines for Future-Proof Code_ (BMS).
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/10guidelines.PNG)
+  
+  ##**Better Code Hub analysis** <a name= "bch"></a>
  
-![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/10guidelines.PNG)
-
-  **Better Code Hub analysis** <a name= "bch"></a>
- 
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/1.PNG)
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/2.PNG)
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/3.PNG)
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/4.PNG)
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/5.PNG)
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/6.PNG)
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/7.PNG)
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/8.PNG)
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/9.PNG)
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/10.PNG)
- ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/11.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/1.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/2.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/3.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/4.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/5.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/6.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/7.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/8.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/9.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/10.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/11.PNG)
  
