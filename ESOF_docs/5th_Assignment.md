@@ -64,8 +64,8 @@
 
   Our pull request can be found [here](https://github.com/clintbellanger/flare-engine/pull/1479).
   
-##**Contribution** <a name ="contrib"></a>
+  ##**Contribution**<a name ="contrib"></a>
 
-[Andre Reis](https://github.com/andrebreis) -- 33%  
-[Francisca Pauperio](https://github.com/Francisca96) -- 33%  
-[Joao Chaves](https://github.com/JoaoChaves96) -- 33%  
+  [Andre Reis](https://github.com/andrebreis) -- 33%  
+  [Francisca Pauperio](https://github.com/Francisca96) -- 33%  
+  [Joao Chaves](https://github.com/JoaoChaves96) -- 33%  
