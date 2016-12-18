@@ -22,6 +22,7 @@
 ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/10guidelines.PNG)
 
  ##**Better Code Hub analysis** <a name= "bch"></a>
+ 
  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/1.PNG)
  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/2.PNG)
  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/3.PNG)
