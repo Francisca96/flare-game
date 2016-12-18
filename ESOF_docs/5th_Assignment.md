@@ -22,15 +22,15 @@
   
   ##**Better Code Hub analysis** <a name= "bch"></a>
  
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/1.PNG)
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/2.PNG)
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/3.PNG)
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/4.PNG)
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/5.PNG)
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/6.PNG)
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/7.PNG)
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/8.PNG)
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/9.PNG)
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/10.PNG)
-  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/11.PNG)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/1.png)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/2.png)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/3.png)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/4.png)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/5.png)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/6.png)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/7.png)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/8.png)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/9.png)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/10.png)
+  ![Image](https://github.com/Francisca96/flare-game/blob/master/ESOF_docs/res/11.png)
  
